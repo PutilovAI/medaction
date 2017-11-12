@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="25px" viewBox="0 0 19 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>PPTX</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,2.53471248 C0,1.13482943 1.13398414,0 2.52685342,0 L12.0537139,0 L19,7.02346004 L19,22.4815109 C19,23.872434 17.8683634,25 16.4769467,25 L2.5230533,25 C1.12960944,25 0,23.860839 0,22.4652875 L0,2.53471248 Z" id="path-1"></path>
+        <path d="M12.0068309,-0.0110663184 L12.9775363,-0.0110663184 L18.9975942,6.00465393 L18.9975942,6.98795111 L14.5306569,6.98795111 C13.1367863,6.98795111 12.0068309,5.86343788 12.0068309,4.4611452 L12.0068309,-0.0110663184 Z" id="path-3"></path>
+        <filter x="-78.7%" y="-50.0%" width="257.4%" height="257.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.889748087   0 0 0 0 0.450184104   0 0 0 0 0.0958417092  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Иконки" transform="translate(-270.000000, -1386.000000)">
+            <g id="PPTX" transform="translate(270.000000, 1386.000000)">
+                <g id="Group-3-Copy">
+                    <g id="Group-5">
+                        <g id="Triangle-+-Rectangle-2-Mask">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#FF9D4E" xlink:href="#path-1"></use>
+                            <g id="Triangle" mask="url(#mask-2)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="#FFD26F" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <rect id="Rectangle-2" fill="#FFFFFF" mask="url(#mask-2)" x="3" y="3" width="4" height="4"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-6" transform="translate(3.000000, 12.000000)" stroke="#FFFFFF">
+                    <path d="M3.71294045,6.53604655 L9.50351306,3.68868327 L9.50351306,0.5 L0.51594906,0.5 L0.51594906,6.53604655 L3.71294045,6.53604655 Z" id="Rectangle-16"></path>
+                    <path d="M3.5,3.5 L3.5,9.5 L12.5,9.5 L12.5,3.5 L3.5,3.5 Z" id="Rectangle-16"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

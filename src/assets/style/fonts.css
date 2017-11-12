@@ -1,0 +1,16 @@
+@import './mixin.css';
+
+@mixin fontFace MuseoSansCyrl;
+@mixin fontFace LoraRegular;
+@mixin fontFace LoraItalic;
+@mixin fontFace LoraBold;
+@mixin fontFace LoraBoldItalic;
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff') format('woff'),
+    url('../fonts/icomoon/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

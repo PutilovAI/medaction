@@ -1,0 +1,28 @@
+@import '../variables.css';
+@import '../mixin.css';
+
+.section{
+    padding: 40px 0;
+    &__title{
+        &_popular{
+            margin-bottom: 1em;
+        }
+    }
+    &_no-padding-bottom {
+        padding-bottom: 0;
+    }
+
+    &_authors{
+        background-color: #1B1520;
+        color: #fff;
+    }
+    &_popular{
+        background-color: var(--color-second);
+    }
+    &_grey{
+        background-color: #EDF1F2;
+    }
+    &_articles, &_videoteka{
+        background-color: #EDF1F2;
+    }
+}

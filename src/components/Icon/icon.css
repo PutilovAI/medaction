@@ -1,0 +1,447 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+@define-mixin addIcon $nameIcon{
+    $src: './img/icon_$(nameIcon)_color.svg';
+    width: image-width($src);
+    height: image-height($src);
+    background-image: url($src);
+}
+.icon{
+    display: inline-block;
+    font-family: var(--icon-ff);
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &:before{
+        content: '';
+        display: inline-block;
+        background-repeat: no-repeat;
+    }
+    @each nameIconColor in (file_noname, logo_fleboteka, file_doc, file_xls, file_ppt, file_pdf, file_zip, video_button_big, soc_fb, soc_vk, soc_tw, soc_ok, soc_fb_messenger, soc_gmail, soc_google, soc_hangouts, soc_skype, soc_telegram, soc_viber, soc_whatsapp, leader, publications, logo_cardioteka, logo_cardioteka_white, medic, lectures, events, webinars ) {
+        &_#(nameIconColor)_color:before {
+            @mixin addIcon #(nameIconColor);
+        }
+    }
+}
+.icon_reg {
+    &:before {
+        content: $icon_reg;
+    }
+}
+
+.icon_acept {
+    &:before {
+        content: $icon_acept;
+    }
+}
+
+.icon_add_file_clip {
+    &:before {
+        content: $icon_add_file_clip;
+    }
+}
+
+.icon_add_files {
+    &:before {
+        content: $icon_add_files;
+    }
+}
+
+.icon_add {
+    &:before {
+        content: $icon_add;
+    }
+}
+
+.icon_alarm_clock_fill {
+    &:before {
+        content: $icon_alarm_clock_fill;
+    }
+}
+
+.icon_alarm_clock {
+    &:before {
+        content: $icon_alarm_clock;
+    }
+}
+
+.icon_all {
+    &:before {
+        content: $icon_all;
+    }
+}
+
+.icon_arrow_left {
+    &:before {
+        content: $icon_arrow_left;
+    }
+}
+
+.icon_arrow_right {
+    &:before {
+        content: $icon_arrow_right;
+    }
+}
+
+.icon_arrow_specify {
+    &:before {
+        content: $icon_arrow_specify;
+    }
+}
+
+.icon_article {
+    &:before {
+        content: $icon_article;
+    }
+}
+
+.icon_brocken_heart_fill {
+    &:before {
+        content: $icon_brocken_heart_fill;
+    }
+}
+
+.icon_broken_heart {
+    &:before {
+        content: $icon_broken_heart;
+    }
+}
+
+.icon_calendar {
+    &:before {
+        content: $icon_calendar;
+    }
+}
+
+.icon_cancel {
+    &:before {
+        content: $icon_cancel;
+    }
+}
+
+.icon_clock {
+    &:before {
+        content: $icon_clock;
+    }
+}
+
+.icon_close {
+    &:before {
+        content: $icon_close;
+    }
+}
+
+.icon_comments_fill {
+    &:before {
+        content: $icon_comments_fill;
+    }
+}
+
+.icon_copy_fill {
+    &:before {
+        content: $icon_copy_fill;
+    }
+}
+
+.icon_delete_fill {
+    &:before {
+        content: $icon_delete_fill;
+    }
+}
+
+.icon_delete_user {
+    &:before {
+        content: $icon_delete_user;
+    }
+}
+
+.icon_dislike_fill {
+    &:before {
+        content: $icon_dislike_fill;
+    }
+}
+
+.icon_eye_close {
+    &:before {
+        content: $icon_eye_close;
+    }
+}
+
+.icon_eye_open {
+    &:before {
+        content: $icon_eye_open;
+    }
+}
+
+.icon_filter {
+    &:before {
+        content: $icon_filter;
+    }
+}
+
+.icon_funny {
+    &:before {
+        content: $icon_funny;
+    }
+}
+
+.icon_happy {
+    &:before {
+        content: $icon_happy;
+    }
+}
+
+.icon_star {
+  &:before {
+      content: $icon_star;
+  }
+}
+
+.icon_star_line {
+  &:before {
+      content: $icon_star_line;
+  }
+}
+
+.icon_heart_fill {
+    &:before {
+        content: $icon_heart_fill;
+    }
+}
+
+.icon_heart {
+    &:before {
+        content: $icon_heart;
+    }
+}
+
+.icon_ivent {
+    &:before {
+        content: $icon_ivent;
+    }
+}
+
+.icon_research {
+    &:before {
+        content: $icon_research;
+    }
+}
+
+.icon_job {
+    &:before {
+        content: $icon_job;
+    }
+}
+
+.icon_key {
+    &:before {
+        content: $icon_key;
+    }
+}
+
+.icon_konsilium {
+    &:before {
+        content: $icon_konsilium;
+    }
+}
+
+.icon_lecture {
+    &:before {
+        content: $icon_lecture;
+    }
+}
+
+.icon_like_fill {
+    &:before {
+        content: $icon_like_fill;
+    }
+}
+
+.icon_link_external {
+    &:before {
+        content: $icon_link_external;
+    }
+}
+
+.icon_location {
+    &:before {
+        content: $icon_location;
+    }
+}
+
+.icon_locked_fill {
+    &:before {
+        content: $icon_locked_fill;
+    }
+}
+
+.icon_options_fill {
+    &:before {
+        content: $icon_options_fill;
+    }
+}
+
+.icon_pencil_fill {
+    &:before {
+        content: $icon_pencil_fill;
+    }
+}
+
+.icon_pencil {
+    &:before {
+        content: $icon_pencil;
+    }
+}
+
+.icon_photo {
+    &:before {
+        content: $icon_photo;
+    }
+}
+
+.icon_play {
+    &:before {
+        content: $icon_play;
+    }
+}
+
+.icon_question {
+    &:before {
+        content: $icon_question;
+    }
+}
+
+.icon_sad {
+    &:before {
+        content: $icon_sad;
+    }
+}
+
+.icon_search {
+    &:before {
+        content: $icon_search;
+    }
+}
+
+.icon_secret_files {
+    &:before {
+        content: $icon_secret_files;
+    }
+}
+
+.icon_send_fill {
+    &:before {
+        content: $icon_send_fill;
+    }
+}
+
+.icon_send {
+    &:before {
+        content: $icon_send;
+    }
+}
+
+.icon_settings {
+    &:before {
+        content: $icon_settings;
+    }
+}
+
+.icon_share {
+    &:before {
+        content: $icon_share;
+    }
+}
+
+.icon_soc_fb_fill {
+    &:before {
+        content: $icon_soc_fb_fill;
+    }
+}
+
+.icon_soc_fb {
+    &:before {
+        content: $icon_soc_fb;
+    }
+}
+
+.icon_soc_google_fill {
+    &:before {
+        content: $icon_soc_google_fill;
+    }
+}
+
+.icon_soc_ok_fill {
+    &:before {
+        content: $icon_soc_ok_fill;
+    }
+}
+
+.icon_soc_ok {
+    &:before {
+        content: $icon_soc_ok;
+    }
+}
+
+.icon_soc_tw_fill {
+    &:before {
+        content: $icon_soc_tw_fill;
+    }
+}
+
+.icon_soc_tw {
+    &:before {
+        content: $icon_soc_tw;
+    }
+}
+
+.icon_soc_vk_fill {
+    &:before {
+        content: $icon_soc_vk_fill;
+    }
+}
+
+.icon_soc_vk {
+    &:before {
+        content: $icon_soc_vk;
+    }
+}
+
+.icon_user_fill {
+    &:before {
+        content: $icon_user_fill;
+    }
+}
+
+.icon_videoteka {
+    &:before {
+        content: $icon_videoteka;
+    }
+}
+
+.icon_webinar {
+    &:before {
+        content: $icon_webinar;
+    }
+}
+
+.icon_webinar {
+    &:before {
+        content: $icon_webinar;
+    }
+}
+
+.icon_write {
+    &:before {
+        content: $icon_write;
+    }
+}

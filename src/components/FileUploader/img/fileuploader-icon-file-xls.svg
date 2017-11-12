@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="33px" viewBox="0 0 26 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 25</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14,0 L22.3624369,9.04210662 L17.0308551,9.04210662 C15.3569601,9.04210662 14,7.6884119 14,6.00606196 L14,0 Z" id="path-1"></path>
+        <filter x="-83.7%" y="-55.3%" width="267.4%" height="254.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.11395202   0 0 0 0 0.383618797   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Материалы" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Форма-отправки-кейса+-поля-2" transform="translate(-370.000000, -1638.000000)">
+            <g id="Group-25" transform="translate(370.000000, 1640.000000)">
+                <path d="M0,4.02427373 C0,2.35401347 1.35053389,1 3.03764787,1 L14.9218647,1 L23,9.19266761 L23,27.2676734 C23,28.9371205 21.6471127,30.2904748 19.9695005,30.2904748 L3.03049952,30.2904748 C1.35680085,30.2904748 0,28.9364784 0,27.266201 L0,4.02427373 Z" id="Rectangle-23" fill="#31C369"></path>
+                <g id="Triangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#77D872" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="5" y="6" width="5.36666667" height="5.25" rx="0.757575758"></rect>
+                <rect id="Rectangle-27" fill="#FFFFFF" x="5" y="16" width="12.2666667" height="1.5" rx="0.75"></rect>
+                <rect id="Rectangle-27" fill="#FFFFFF" transform="translate(15.750000, 20.181218) rotate(-90.000000) translate(-15.750000, -20.181218) " x="11.5687816" y="19.4312184" width="8.36243689" height="1.5" rx="0.75"></rect>
+                <rect id="Rectangle-27" fill="#FFFFFF" transform="translate(10.750000, 20.181218) rotate(-90.000000) translate(-10.750000, -20.181218) " x="6.56878155" y="19.4312184" width="8.36243689" height="1.5" rx="0.75"></rect>
+                <rect id="Rectangle-27" fill="#FFFFFF" transform="translate(5.750000, 20.181218) rotate(-90.000000) translate(-5.750000, -20.181218) " x="1.56878155" y="19.4312184" width="8.36243689" height="1.5" rx="0.75"></rect>
+                <rect id="Rectangle-27-Copy" fill="#FFFFFF" x="5" y="19" width="12.2666667" height="1.5" rx="0.75"></rect>
+                <rect id="Rectangle-27-Copy" fill="#FFFFFF" x="5" y="22" width="12.2666667" height="1.5" rx="0.75"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

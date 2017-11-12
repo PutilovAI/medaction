@@ -1,0 +1,320 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.filtering{
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    max-height: 80px;
+    &__container{
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 2px 4px color(#000 a(0.16));
+        border-radius: 4px;
+    }
+
+    &__search-wrap{
+        background-color: #fff;
+        padding: 25px 35px 25px 55px;
+        padding-right: 110px;
+        position: relative;
+        z-index: 2;
+        border-radius: 4px;
+    }
+    &__search{
+        position: relative;
+    }
+    &__search-input{
+		background: none;
+		border: none;
+		border-bottom: 1px solid  color(var(--color-grey) a(0.6));
+		width: 100%;
+		height: 30px;
+		padding-right: 50px;
+		color: #000;
+		font-size: var(--fs-h5);
+        line-height: 1;
+		@mixin base-transition border-color;
+		&:hover{
+			border-color: color(var(--color-grey) a(0.7));
+		}
+		&:focus{
+			outline: none;
+			border-color: color(var(--color-grey) a(1));
+		}
+	}
+	&__search-button{
+    position: absolute;
+    height: 30px;
+    left: -25px;
+    background: none;
+    border: none;
+    top: 4px;
+    cursor: pointer;
+    opacity: 0.21;
+    color: #000;
+		@mixin base-transition;
+        font-size: 20px;
+		&:hover{
+			opacity: 0.6;
+		}
+	}
+
+  &__search-cancel {
+    font-size: 20px;
+    position: absolute;
+    height: 30px;
+    right: 0px;
+    background: none;
+    border: none;
+    top: 3px;
+    cursor: pointer;
+    @mixin base-transition;
+    opacity: 0.21;
+    &:hover{
+			opacity: 0.6;
+		}
+  }
+    &__filter-control{
+        @mixin pos-center-h;
+        right: 35px;
+        cursor: pointer;
+        color: var(--color-main);
+        opacity: 0.5;
+        @mixin base-transition opacity;
+        &:before{
+            @mixin icon $(icon_filter);
+            font-size: 30px;
+        }
+        &:hover{
+            opacity: 1;
+        }
+        &.state-noempty:not(.state-open) {
+            opacity: 1;
+        }
+        &.state-open{
+            width: 30px;
+            height: 30px;
+            right: 40px;
+
+            &:before{
+                @mixin icon $(icon_close);
+            }
+
+        }
+    }
+    &__filter-control-count{
+        background-color: var(--color-main);
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        right: -6px;
+        top: -6px;
+        text-align: center;
+        line-height: 22px;
+        position: absolute;
+    }
+
+    &__shadow{
+        position: fixed;
+        display: none;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        background-color: color(#EDF1F2 a(0.8));
+        &.state-show{
+            display: block;
+        }
+    }
+    &.state-show{
+        z-index: 3;
+        & .filtering__search-wrap{
+            border-radius: 4px 4px 0 0;
+        }
+        & .filtering__container{
+             box-shadow: 0 2px 19px color(#000 a(0.21));
+        }
+    }
+
+}
+
+.filter{
+    display: none;
+    position: relative;
+    left: 0;
+    top: calc(100%);
+    width: 100%;
+    z-index: 2;
+    &__container{
+        background-color: #fff;
+        padding: 35px;
+        padding-top: 0;
+        border-radius: 0 0 4px 4px;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            right: 43px;
+            top: -10px;
+            border-style: solid;
+            border-width: 0 12px 10px 12px;
+            border-color: transparent transparent #fff transparent;
+        }
+    }
+    &__row{
+        &_bot-desktop{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__link-clear{
+        color: var(--color-main);
+        @mixin link;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    &__mach-selected{
+        color: #000;
+    }
+
+    &__buttons-mobile{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+        box-shadow: 0 -1px 11px color(#000 a(0.2));
+    }
+    &__buttons-desktop {
+        display:block;
+        text-align: right;
+    }
+    &__button-control{
+        width: 50%;
+        height: 50px;
+        text-align: center;
+        color: color(#000 a(0.7));
+        line-height: 50px;
+        border-right: 1px solid color(var(--color-grey) a(0.3));
+        cursor: pointer;
+        background-color: #fff;
+        &:last-child{
+            border-right: none;
+        }
+        &_cancel{
+            & .filter__button-control-text:before{
+                background-image: url('./img/filter-button-cancel.svg');
+            }
+        }
+        &_apply{
+            & .filter__button-control-text:before{
+                background-image: url('./img/filter-button-apply.svg');
+            }
+        }
+    }
+    &__button-control-text{
+        position: relative;
+        padding-left: 30px;
+        &:before{
+            content: '';
+            width: 23px;
+            height: 23px;
+            @mixin pos-center-h;
+            left: 0;
+            background-repeat: no-repeat;
+        }
+    }
+    &__title{
+        @mixin fontH1;
+    }
+
+    &.state-open{
+        display: block;
+    }
+}
+@mixin below mobile{
+    .filtering{
+        margin-bottom: 15px;
+
+        &__search-wrap{
+            border-radius: 0px;
+            box-shadow: none;
+            padding: 0;
+        }
+        &__search-input{
+            border: none;
+            height: 50px;
+            padding-right: 50px;
+            line-height: 50px;
+            padding-left: 40px;
+        }
+        &__search-button{
+            height: 40px;
+            opacity: 0.21;
+            line-height: 40px;
+            left: 10px;
+            top: 7px;
+        }
+        &__search-cancel {
+            right: 15px;
+            top: 15px;
+        }
+
+        &__filter-control{
+            right: 0;
+            top: -50px;
+            transform: none;
+        }
+    }
+    .filter{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        padding-top: var(--menu-height-mobile);
+        background-color: #fff;
+        overflow: hidden;
+        &__container{
+            padding: 20px;
+            height: 100%;
+            overflow: auto;
+            padding-bottom: 50px;
+            padding-top: 40px;
+        }
+
+        &__buttons-mobile{
+            display: flex;
+        }
+        &__buttons-desktop {
+          display: none;
+        }
+        &__clear-wrap{
+            background-color: var(--color-second);
+            padding: 15px 10px;
+            margin-bottom: 30px;
+            justify-content: space-between;
+            display: flex;
+        }
+
+    }
+}
+
+.filter-show-desktop{
+    @mixin below mobile{
+        display: none;
+    }
+}
+.filter-show-mobile{
+    display: none;
+    @mixin below mobile{
+        display: block;
+    }
+}

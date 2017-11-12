@@ -1,0 +1,287 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.input{
+    position: relative;
+    margin-bottom: 20px;
+
+    &__double-textarea-wrap {
+      height: 0;
+    }
+    &__double-textarea {
+      -webkit-rtl-ordering: logical;
+      flex-direction: column;
+      resize: auto;
+      cursor: text;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      border-width: 1px;
+      border-style: solid;
+      border-color: initial;
+      border-image: initial;
+      visibility: hidden;
+      display: inline-block;
+      line-height: 1.5;
+      padding: 0.75em 1.2em;
+      font-size: 14px;
+      font-family: MuseoSansCyrl, Arial, sans-serif;
+      padding-right: 40px;
+      border: 1px solid;
+      width: 100%;
+    }
+    &__field,
+    &__textarea{
+        position: relative;
+        font-size: var(--base-fs);
+        padding: 0 1.2em;
+        line-height: var(--input-height);
+        border: 1px solid var(--input-border-color);
+        background: var(--input-bg-color);
+        color: var(--input-color);
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        @mixin base-transition;
+
+        &:hover{
+            border-color: var(--input-border-color-hover);
+        }
+        &:focus{
+            outline: none;
+            border-color: var(--input-border-color-focus);
+        }
+    }
+    &__textarea_big .input__textarea {
+      height: 400px;
+      max-height: 400px;
+    }
+
+    &__field{
+        height: var(--input-height);
+        &-wrap_datepicker {
+          position:relative;
+          width: 46%;
+          margin-right:4%;
+          display:inline-block;
+          &:last-child {
+            margin:0;
+          }
+        }
+        &_icon{
+            padding-left: 35px;
+        }
+        &_password{
+            padding-right: 40px;
+        }
+    }
+    &__field-wrap{
+        position: relative;
+    }
+    &__textarea{
+        line-height: var(--base-lh);
+        padding: 0.75em 1.2em;
+        min-height: 80px;
+        max-height: 250px;
+        height: 80px;
+        padding-right: 40px;
+        font-family: MuseoSansCyrl, Arial, sans-serif;
+    }
+
+    &__label{
+        display: inline-block;
+        color: color(#000 a(0.5));
+        margin-bottom: 5px;
+    }
+    &__popup-date-range{
+        position: absolute;
+        top: 100%;
+        z-index: 2;
+        box-shadow: 0 2px 8px color(#000 a(0.2));
+        display: none;
+        &.state-open{
+            display: block;
+        }
+    }
+    &__password-wrap{
+        position: relative;
+    }
+    &__password-visible-button{
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        top: 2px;
+        color: #BEBEBE;
+        font-size: 17px;
+        cursor: pointer;
+        @mixin base-transition;
+        user-select: none;
+        padding: 10px 8px;
+        &:hover{
+            color: var(--color-main);
+        }
+    }
+    &__icon{
+        left: 10px;
+        pointer-events: none;
+        @mixin pos-center-h;
+        color: var(--color-main);
+        font-size: 19px;
+        z-index:2;
+    }
+
+    &_text_icon-link:before {
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        z-index: 1;
+        font-size: 18px;
+        pointer-events: none;
+        color: rgba(210, 210, 210, 0.8);
+    }
+    &__checkbox{
+        position: absolute;
+        opacity: 0.01;
+        width: 1px;
+        height: 1px;
+        left: -6000px;
+    }
+
+    &_checkbox{
+        & .input__label{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            padding-left: 35px;
+            line-height: 1.5;
+            user-select: none;
+            margin-bottom: 0;
+            color: #000;
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                background: #fff;
+                width: 20px;
+                height: 20px;
+                border-radius: 3px;
+                border: 1px solid var(--input-border-color);
+                @mixin base-transition;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                text-align: center;
+                line-height: 20px;
+                left: -6px;
+                top: 0;
+                color: #fff;
+                background: url('./img/input-checkbox-check.svg') no-repeat;
+                @mixin img-size './img/input-checkbox-check.svg';
+            }
+            &:hover{
+                &:before{
+                    border-color: var(--color-main);
+                }
+            }
+        }
+    }
+    &__checkbox:checked ~ .input__label:before{
+        background-color: var(--color-main);
+        border-color: var(--color-main);
+    }
+
+    &__radio{
+        position: absolute;
+        opacity: 0.01;
+        width: 1px;
+        height: 1px;
+        left: -6000px;
+    }
+
+    &_radio{
+        & .input__label{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            padding-left: 35px;
+            line-height: 1.5;
+            user-select: none;
+            margin-bottom: 0;
+            color: #000;
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                background: #fff;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid var(--input-border-color);
+                @mixin base-transition;
+            }
+
+            &:hover{
+                &:before{
+                    border-color: var(--color-main);
+                }
+            }
+        }
+    }
+    &_radio.checked{
+        & .input__label{
+            &:before{
+                border-width: 6px;
+                border-color: var(--color-main);
+            }
+        }
+    }
+
+    /* Ошибки */
+    &.state-error{
+        & .input__field,
+        .input__textarea
+        {
+            border-color: var(--input-color-error);
+        }
+	}
+	&__error{
+		color: var(--input-color-error);
+		font-size: 0.9em;
+		margin-top: 5px;
+		line-height: 1.4;
+	}
+
+  &__checkbox-error {
+    margin-left: 35px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+  }
+}
+
+.react-datepicker-popper{
+    z-index: 2;
+}
+.rdr-MonthAndYear-button{
+    position: relative;
+    cursor: pointer;
+    &:before, &:after{
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 1px;
+        background-color: #000;
+        left: 0px;
+        top: 9px;
+    }
+    &:before{
+        margin-top: -4px;
+        transform: rotate(-45deg);
+    }
+    &:after{
+        margin-top: 4px;
+        transform: rotate(45deg);
+    }
+    &.next{
+        transform: rotate(180deg);
+    }
+}

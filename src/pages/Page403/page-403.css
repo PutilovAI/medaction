@@ -1,0 +1,209 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.page-403{
+  &__section{
+    min-height: 100vh;
+    background: url('page-403.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__auth {
+    height:455px;
+    margin:0 -40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  &__auth-icon-wrap{
+    margin-bottom: 20px;
+  }
+  &__auth-icon{
+    font-size: 35px;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    @mixin flex-center;
+    display: inline-flex;
+  }
+  &__auth-text {
+    position:relative;
+    padding-left: 118px;
+    max-width: 50%;
+  }
+
+  &__auth-title {
+    @mixin fontH1;
+    color: #fff;
+    max-width: 380px;
+  }
+
+  &__auth-description {
+    @mixin fontH4;
+    color: #fff;
+    max-width: 380px;
+  }
+
+  &_auth{
+    text-align: center;
+    & .page-403__section{
+      &:before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: color(#000 a(0.5));
+      }
+    }
+    & .page-403__auth{
+      margin: 0 -40px;
+      justify-content: center;
+    }
+    & .page-403__auth-text{
+      max-width: 700px;
+      padding: 40px;
+    }
+  }
+  & .input_checkbox .input__label {
+    color: #fff;
+    text-align: left;
+  }
+}
+
+@mixin below tablet{
+  .page-403 {
+    &__section{
+      background: none;
+      display: block;
+      min-height: auto;
+    }
+    &__auth {
+      background-image: url('page-403.png');
+      margin: -40px -40px 0 -40px;
+      min-height: 380px;
+      position: relative;
+      align-items: flex-end;
+      &:before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: color(#000 a(0.5));
+      }
+    }
+    &__auth-text {
+      max-width: 100%;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding: 40px;
+    }
+
+    /* Если юзер авторизован */
+    &_auth{
+      & .page-403__section{
+        min-height: 100vh;
+        background: url('page-403.png') no-repeat center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+      }
+      & .page-403__auth {
+        background-image: none;
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@mixin below mobile{
+  .page-403 {
+
+    &__auth-icon{
+      font-size: 29px;
+      width: 50px;
+      height: 50px;
+      border-radius: 13px;
+    }
+
+    &__auth {
+      margin: 0 -20px 0 -20px;
+      min-height: auto;
+      height: auto;
+      display: block;
+      &:before{
+        background-color: color(#000 a(0.5));
+      }
+    }
+
+    &__auth-title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &__auth-description {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    &__auth-text {
+      padding: 40px 20px;
+    }
+    /* Если юзер авторизован */
+    &_auth{
+      & .page-403__section{
+        min-height: calc(100vh - var(--menu-height-mobile));
+      }
+      & .page-403__auth-icon-wrap{
+        display: block;
+      }
+      & .page-403__auth{
+        text-align: left;
+      }
+      & .page-403__auth-title{
+        font-size: 30px;
+        line-height: 40px;
+      }
+      & .page-403__auth-description {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+@media (height < 667px), (width <= 768px) and (height <= 414px) {
+  .page-403 {
+    &__auth-icon-wrap{
+      display: none;
+    }
+
+    &__auth {
+      min-height: auto;
+      height: auto;
+    }
+
+    &__auth-title {
+      font-size: 25px;
+      line-height: 32px;
+    }
+    &__auth-description {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    &__auth-text {
+      padding: 25px 20px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.nav-back {
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  line-height: 22px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-right:30px;
+  display: inline-block;
+  vertical-align: baseline;
+
+  &:hover {
+    color: var(--color-main);
+    cursor:pointer;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: baseline;
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>gmail</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="17.9921487%" y1="50.0087122%" x2="81.8862543%" y2="50.0087122%" id="linearGradient-1">
+            <stop stop-color="#F8F6EF" offset="0%"></stop>
+            <stop stop-color="#E7E4D6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Иконки" transform="translate(-201.000000, -1715.000000)" fill-rule="nonzero">
+            <g id="gmail" transform="translate(201.000000, 1715.000000)">
+                <rect id="Rectangle-path" fill="#DC4E41" x="0" y="0" width="50" height="50" rx="10"></rect>
+                <path d="M40.1090493,13.0023488 C41.6849531,13.0023488 42.974421,14.2734881 42.974421,15.8270248 L42.974421,16.6458963 L38.9935133,19.4491631 L25.4406534,28.6525648 L11.8877934,19.3558045 L11.8877934,37.9485691 L10.8677269,37.9485691 C9.29182316,37.9485691 8.00235524,36.6774568 8.00235524,35.1239201 L8.00235524,15.8278078 C8.00235524,14.2742441 9.29182316,13.0031048 10.8677269,13.0031048 L25.4406534,23.6544276 L40.1082551,13.0031048 L40.1090493,13.0023488 Z" id="Shape" fill="#E75A4D"></path>
+                <polygon id="Shape" fill="url(#linearGradient-1)" points="10.8677269 13.0023488 25.4406534 23.6536717 40.1090493 13.0023488"></polygon>
+                <polygon id="Shape" fill="#E7E4D7" points="11.8877934 19.3558045 11.8877934 37.9485691 38.9942801 37.9485691 38.9942801 19.4491631 25.4406534 28.6525648"></polygon>
+                <polygon id="Shape" fill="#B8B7AE" points="11.8877934 37.9485691 25.4406534 28.6525648 25.3793075 28.6097462 11.8877934 37.7442495"></polygon>
+                <polygon id="Shape" fill="#B7B6AD" points="38.9942801 19.4491631 39.0020305 37.9485691 25.4406534 28.6525648"></polygon>
+                <path d="M42.974421,16.6458963 L42.9790767,35.1261879 C42.9107746,37.1802376 42.0079225,37.9133909 39.0020305,37.9478402 L38.9942801,19.4484071 L42.9751878,16.6451404 L42.974421,16.6458963 Z" id="Shape" fill="#B2392F"></path>
+                <polygon id="Shape" fill="url(#linearGradient-1)" points="10.8677269 13.0023488 25.4406534 23.6536717 40.1090493 13.0023488"></polygon>
+                <polygon id="Shape" fill="url(#linearGradient-1)" points="10.8677269 13.0023488 25.4406534 23.6536717 40.1090493 13.0023488"></polygon>
+                <polygon id="Shape" fill="url(#linearGradient-1)" points="10.8677269 13.0023488 25.4406534 23.6536717 40.1090493 13.0023488"></polygon>
+                <polygon id="Shape" fill="url(#linearGradient-1)" points="10.8677269 13.0023488 25.4406534 23.6536717 40.1090493 13.0023488"></polygon>
+                <polygon id="Shape" fill="url(#linearGradient-1)" points="10.8677269 13.0023488 25.4406534 23.6536717 40.1090493 13.0023488"></polygon>
+                <polygon id="Shape" fill="url(#linearGradient-1)" points="10.8677269 13.0023488 25.4406534 23.6536717 40.1090493 13.0023488"></polygon>
+                <polygon id="Shape" fill="url(#linearGradient-1)" points="10.8677269 13.0023488 25.4406534 23.6536717 40.1090493 13.0023488"></polygon>
+                <polygon id="Shape" fill="#F7F5ED" points="10.8677269 13.0023488 25.4406534 23.6536717 40.1090493 13.0023488"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

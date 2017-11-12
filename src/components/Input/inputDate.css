@@ -1,0 +1,240 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.react-datepicker {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2) 0px 3px 7px;
+  border:0;
+  margin-top:0;
+  padding:5px;
+  border-radius: 0;
+
+  &-popper {
+    margin-top:0 !important;
+  }
+
+  &__current-month,
+  &__triangle
+   {
+    display:none;
+  }
+
+
+  &__header {
+    border-radius: 0;
+    background:#fff;
+    border:0;
+    border:0;
+  }
+
+  &__day-names {
+    border-top: 1px dotted #333;
+  }
+
+  &__month {
+    margin-top:0;
+  }
+
+  &__navigation--previous, &__navigation--next {
+    display: inline-block;
+    font-family: icomoon;
+    speak: none;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    width:16px;
+    height:16px;
+    padding:3px 0 0 0;
+    background:none;
+    border:0;
+  }
+
+  &__navigation--previous {
+    color:#000;
+    transition: none;
+
+    &:before {
+      font-size:16px;
+      content: "\E907";
+      display:inline-block;
+      color:inherit;
+    }
+
+    &:hover {
+      color: var(--color-main);
+    }
+  }
+  &__navigation--next {
+    color:#000;
+    transition: none;
+
+    &:before {
+      font-size:16px;
+      content: "\E908";
+      display:inline-block;
+      color:inherit;
+    }
+
+    &:hover {
+      color: var(--color-main);
+    }
+  }
+
+  &__month-read-view--selected-month,
+  &__year-read-view--selected-year {
+    font-size:13px;
+    padding:0;
+    margin:0;
+    color: #000;
+    border-bottom: 1px dotted;
+
+    &:hover {
+      color: var(--color-main);
+    }
+  }
+
+  &__month-dropdown-container--scroll {
+    position:absolute;
+    right:40%;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+  }
+
+  &__year-dropdown-container--scroll {
+    position:absolute;
+    left:50%;
+    width:40%;
+    text-align:center;
+  }
+
+  &__header__dropdown--scroll {
+      text-align:center;
+      width:100%;
+      height:26px;
+  }
+
+  &__month-dropdown,
+  &__year-dropdown {
+    left:0;
+    width:100%;
+  }
+
+  &__year-dropdown,
+  &__month-dropdown {
+    background-color: #fff;
+    position: absolute;
+    border: 1px solid rgba(151, 151, 151, .5);
+    width: 100%;
+    top: -5px;
+    font-size:12px;
+    z-index: 1;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  &__year-read-view--down-arrow,
+  &__month-read-view--down-arrow {
+    display:none;
+  }
+
+  &__day-name {
+    color: var(--color-main);
+  }
+
+  &__year-option,
+  &__month-option {
+    line-height:24px;
+
+    &:hover {
+      border-radius: 0 !important;
+      background-color: var(--color-border);
+    }
+  }
+
+  &__month-option--selected {
+      left: 5px;
+  }
+
+  &__day--outside-month {
+    opacity: 0.4;
+  }
+
+  &__year-option {
+    height:24px;
+    top:0;
+    border:0;
+    border-radius:0;
+
+    &:hover {
+      border-radius:0;
+    }
+  }
+
+  &__navigation--years-upcoming {
+    top:2px;
+  }
+  &__navigation--years-previous {
+    top:7px;
+  }
+
+  &__day-name {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  &__day {
+    margin:0;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    box-sizing: border-box;
+    display: inline-block;
+    letter-spacing: initial;
+    text-align: center;
+    font-size: 12px;
+    transition: transform 0.1s ease;
+    border-radius: 50%;
+
+    &--in-selecting-range {
+      background-color: color(var(--color-border) a(0.5)) !important;
+    }
+    &--in-range {
+      background-color: color(var(--color-main) a(0.5)) !important;
+    }
+
+    &:hover {
+        border-radius: 14px;
+        background-color: var(--color-border);
+    }
+
+    &--selected, &--today {
+      background-color: var(--color-main) !important;
+      color: #fff;
+    }
+  }
+
+  &__today-button {
+    background: none;
+    border-top: 1px dotted;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__input-container {
+    width:100%;
+  }
+
+  &-wrapper {
+    width:100%;
+  }
+
+}
+
+
+.react-datepicker__month--selecting-range .react-datepicker__day--in-range:not(.react-datepicker__day--in-selecting-range) {
+  color: #fff!important;
+}

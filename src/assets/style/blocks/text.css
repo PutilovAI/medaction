@@ -1,0 +1,13 @@
+@import '../variables.css';
+@import '../mixin.css';
+
+.text-search-result{
+    color: color(#000 a(0.5));
+    font-size: var(--base-fs);
+    padding-left: 30px;
+    margin-bottom: 40px;
+    @mixin below mobile{
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+}

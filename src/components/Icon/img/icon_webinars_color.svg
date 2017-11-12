@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="41px" viewBox="0 0 40 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Bitmap</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="9"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Мой-профиль1" transform="translate(-370.000000, -696.000000)">
+            <g id="Group-24" transform="translate(370.000000, 549.000000)">
+                <g id="Bitmap" transform="translate(0.000000, 147.570831)">
+                    <g>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#1CA974" xlink:href="#path-1"></use>
+                        <g id="Group-7-Copy" mask="url(#mask-2)">
+                            <g transform="translate(5.000000, 14.000000)" id="Group-9">
+                                <g>
+                                    <g id="Group-18">
+                                        <g id="Group-2">
+                                            <ellipse id="Oval-9" stroke="#FFFFFF" stroke-width="1.5" cx="14.969697" cy="7" rx="6.80351906" ry="7"></ellipse>
+                                            <path d="M28.2340794,10.3164141 C28.2340794,6.45042089 25.1880401,3.31641413 21.4305603,3.31641413" id="Oval-9-Copy" stroke="#FFFFFF" stroke-width="1.5" transform="translate(24.832320, 6.816414) rotate(-315.000000) translate(-24.832320, -6.816414) "></path>
+                                            <path d="M8.7820405,10.3164141 C8.7820405,6.45042089 5.73600126,3.31641413 1.97852144,3.31641413" id="Oval-9-Copy" stroke="#FFFFFF" stroke-width="1.5" transform="translate(5.380281, 6.816414) scale(-1, 1) rotate(-315.000000) translate(-5.380281, -6.816414) "></path>
+                                            <path d="M16.9096006,7.71972167 L15.0734641,9.13659376 L15.0734641,9.13659376 C14.6759728,9.4433217 14.1050903,9.36974345 13.7983624,8.97225215 C13.6755867,8.81314606 13.6089932,8.6178413 13.6089932,8.41687209 L13.6089932,5.58312791 L13.6089932,5.58312791 C13.6089932,5.08105086 14.016007,4.674037 14.5180841,4.674037 C14.7190533,4.674037 14.914358,4.74063052 15.0734641,4.86340624 L16.9096006,6.28027833 L16.9096006,6.28027833 C17.3070919,6.58700626 17.3806701,7.15788875 17.0739422,7.55538005 C17.0264186,7.61696628 16.9711868,7.67219807 16.9096006,7.71972167 Z" id="Triangle-4" fill="#FFFFFF"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

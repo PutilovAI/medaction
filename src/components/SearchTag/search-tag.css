@@ -1,0 +1,25 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.search-tag{
+    text-decoration: none;
+    font-family: var(--base-ff);
+    font-size: var(--base-fs);
+    color: color(#000 a(0.8));
+    line-height: 2.1em;
+    background-color: var(--color-second);
+    padding: 0 0.6em;
+    @mixin base-transition;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    display: inline-block;
+    border-radius: var(--button-border-radius);
+    &:hover{
+        text-decoration: none;
+        color: color(#fff a(0.8));
+        background-color: #50C8AE;
+    }
+        
+}

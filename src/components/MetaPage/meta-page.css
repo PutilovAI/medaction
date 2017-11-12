@@ -1,0 +1,24 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.meta-page{
+    font-size: var(--fs-h5);
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    &__left{
+        color: var(--color-main);
+        padding-right: 13px;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    &__right{
+        padding-left: 8px;
+        display: inline-block;
+        border-left: 1px solid #000;
+    }
+    &__left-icon{
+        vertical-align: top;
+        margin-right: 10px;
+    }
+}

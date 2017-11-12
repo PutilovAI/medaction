@@ -1,0 +1,28 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.video{
+    width: 100%;
+    &__player-wrap{
+       height: 515px;
+       width: 100%;
+    }
+
+}
+
+@mixin below tablet{
+    .video{
+        &__player-wrap{
+            height: 400px;
+        }
+    }
+}
+@mixin below mobile{
+    .video{
+        &__player-wrap{
+            height: 250px;
+        }
+    }
+}
+	
+	

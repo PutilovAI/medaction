@@ -1,0 +1,27 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.page-quiz{
+    &__page-title{
+        margin-bottom: 0.8em;
+    }
+    &__title-desc{
+        line-height: var(--base-lh);
+        margin-bottom: 25px;
+    }
+    &__error{
+        color: var(--color-red);
+        line-height: var(--base-lh);
+    }
+    &__error-link{
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__submit{
+        margin-top: 30px;
+    }
+}
+

@@ -1,0 +1,30 @@
+# IDE's and code editors
+.idea/
+.vscode
+
+# dependencies
+node_modules/
+node_modules
+
+# testing
+coverage/
+coverage
+
+# production
+build/
+build
+bundles/
+bundles
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+react/npm-debug.log*
+react/yarn-debug.log*
+react/yarn-error.log*
+react/yarn.lock
+yarn.lock

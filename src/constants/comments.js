@@ -1,0 +1,12 @@
+export const URL_API = `${API_URL}`;
+
+export const URL_API_COMMENTS = `${URL_API}/activity/comments/`;
+export const COMMENTS_START = 'COMMENTS_START';
+export const COMMENTS_SUCCESS = 'COMMENTS_SUCCESS';
+export const COMMENTS_FAILURE = 'COMMENTS_FAILURE';
+export const COMMENTS_POST_SUCCESS = 'COMMENTS_POST_SUCCESS';
+export const COMMENTS_POST_FAILURE = 'COMMENTS_POST_FAILURE';
+export const COMMENTS_CANCEL = 'COMMENTS_CANCEL';
+export const COMMENT_NOTIFICATION_CANCEL = 'COMMENT_NOTIFICATION_CANCEL';
+
+export const URL_API_SEND_FILES = `${URL_API}/utils/attachments/`;

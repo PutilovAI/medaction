@@ -1,0 +1,23 @@
+{
+    "extends": ["react-app", "airbnb"],
+    "rules": {
+         "radix": 0,
+         "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ]
+    },
+    "parser": "babel-eslint",
+    "globals": {
+        "API_URL": true,
+        "THEME": true,
+        "window": true,
+        "document": true
+    }
+
+}

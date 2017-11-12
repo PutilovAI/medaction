@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="25px" viewBox="0 0 19 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>XLSX</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,2.53471248 C0,1.13482943 1.13398414,0 2.52685342,0 L12.0537139,0 L19,7.02346004 L19,22.4815109 C19,23.872434 17.8683634,25 16.4769467,25 L2.5230533,25 C1.12960944,25 0,23.860839 0,22.4652875 L0,2.53471248 Z" id="path-1"></path>
+        <path d="M12.0068309,-0.0110663184 L12.9775363,-0.0110663184 L18.9975942,6.00465393 L18.9975942,6.98795111 L14.5306569,6.98795111 C13.1367863,6.98795111 12.0068309,5.86343788 12.0068309,4.4611452 L12.0068309,-0.0110663184 Z" id="path-3"></path>
+        <filter x="-78.7%" y="-50.0%" width="257.4%" height="257.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.11395202   0 0 0 0 0.383618797   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Иконки" transform="translate(-138.000000, -1386.000000)">
+            <g id="XLSX" transform="translate(138.000000, 1386.000000)">
+                <g id="Group-3-Copy-6">
+                    <g id="Group-5">
+                        <g id="Triangle-+-Rectangle-2-Mask">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#31C369" xlink:href="#path-1"></use>
+                            <g id="Triangle" mask="url(#mask-2)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="#77D872" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <rect id="Rectangle-2" fill="#FFFFFF" mask="url(#mask-2)" x="3" y="3" width="4" height="4"></rect>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle-27" fill="#FFFFFF" transform="translate(15.500000, 17.500000) rotate(-90.000000) translate(-15.500000, -17.500000) " x="12" y="17" width="7" height="1"></rect>
+                <rect id="Rectangle-27" fill="#FFFFFF" transform="translate(9.500000, 17.500000) rotate(-90.000000) translate(-9.500000, -17.500000) " x="6" y="17" width="7" height="1"></rect>
+                <rect id="Rectangle-27" fill="#FFFFFF" transform="translate(3.500000, 17.500000) rotate(-90.000000) translate(-3.500000, -17.500000) " x="0" y="17" width="7" height="1"></rect>
+                <rect id="Rectangle-27-Copy" fill="#FFFFFF" x="4" y="17" width="11" height="1"></rect>
+                <rect id="Rectangle-27-Copy" fill="#FFFFFF" x="2.99205308" y="14" width="13" height="1"></rect>
+                <rect id="Rectangle-27-Copy" fill="#FFFFFF" x="4" y="20" width="11" height="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

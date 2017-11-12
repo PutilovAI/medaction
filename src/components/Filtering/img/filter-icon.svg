@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="38px" viewBox="0 0 43 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.7%" y="-7.5%" width="101.6%" height="120.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.828390731   0 0 0 0 0.828390731   0 0 0 0 0.828390731  0 0 0 0.507274683 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Материалы" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Все-материалы" transform="translate(-1210.000000, -188.000000)">
+            <g id="Group-17" transform="translate(349.000000, 165.000000)">
+                <g id="Group-5" filter="url(#filter-1)">
+                    <g id="Group-4">
+                        <g id="Group-7-Copy-5">
+                            <g id="Group-4-Copy" transform="translate(865.000000, 17.000000)">
+                                <g id="Group" transform="translate(0.000000, 9.000000)">
+                                    <g id="Group-3" transform="translate(0.000000, 2.000000)">
+                                        <rect id="Rectangle-2" fill="#17B491" x="0" y="0" width="29" height="2" rx="1"></rect>
+                                        <path d="M1,11 L14,11 L14,11 C14.5522847,11 15,11.4477153 15,12 L15,12 L15,12 C15,12.5522847 14.5522847,13 14,13 L1,13 L1,13 C0.44771525,13 6.76353751e-17,12.5522847 0,12 L0,12 L0,12 C-6.76353751e-17,11.4477153 0.44771525,11 1,11 Z" id="Rectangle-2-Copy" fill="#17B491"></path>
+                                        <path d="M21,11 L34,11 L34,11 C34.5522847,11 35,11.4477153 35,12 L35,12 L35,12 C35,12.5522847 34.5522847,13 34,13 L21,13 L21,13 C20.4477153,13 20,12.5522847 20,12 L20,12 L20,12 C20,11.4477153 20.4477153,11 21,11 Z" id="Rectangle-2-Copy" fill="#17B491"></path>
+                                        <circle id="Oval-Copy-2" stroke="#17B491" stroke-width="2" cx="18" cy="12" r="3"></circle>
+                                        <rect id="Rectangle-2-Copy-2" fill="#17B491" x="0" y="22" width="28" height="2" rx="1"></rect>
+                                        <circle id="Oval-Copy-2" stroke="#17B491" stroke-width="2" cx="31" cy="23" r="3"></circle>
+                                    </g>
+                                    <circle id="Oval-Copy-2" stroke="#17B491" stroke-width="2" cx="31" cy="3" r="3"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

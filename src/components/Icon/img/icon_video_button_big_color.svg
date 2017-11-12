@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="78px" viewBox="0 0 78 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M489,797 C472.431458,797 459,783.568542 459,767 C459,750.431458 472.431458,737 489,737 C505.568542,737 519,750.431458 519,767 C519,783.568542 505.568542,797 489,797 Z M499.602647,764.896877 L485.397353,756.103123 C483.527184,754.9454 482,755.793333 482,758.00552 L482,775.99448 C482,778.212915 483.521047,779.0584 485.397353,777.896877 L499.602647,769.103123 C501.472816,767.9454 501.478953,766.0584 499.602647,764.896877 Z" id="path-1"></path>
+        <filter x="-24.2%" y="-20.8%" width="148.3%" height="148.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.319236866 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Карточки.-Состояния" transform="translate(-450.000000, -730.000000)">
+            <g id="Combined-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

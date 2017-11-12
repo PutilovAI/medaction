@@ -1,0 +1,99 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.tabs {
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__item {
+        color: var(--base-fc);
+        font-size: var(--fs-h5);
+        border-radius: var(--button-border-radius);
+        background-color: transparent;
+        height: 35px;
+        line-height: 35px;
+        padding: 0 0.6em;
+        margin-right: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-bottom: 10px;
+        @mixin base-transition;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            background-color: color(var(--color-main) a(0.5));
+        }
+        &.state-active {
+            background-color: var(--color-main);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &_filters {
+          padding: 0;
+          height: auto;
+          line-height: auto;
+          margin-right: 20px;
+          color: color(#000 a(0.5));
+          font-size:14px;
+          line-height:22px;
+          border:0;
+          border-bottom: 1px dotted;
+          border-radius: 0;
+          position:relative;
+
+          &:before {
+            content: '/';
+            position:absolute;
+            right:-13px;
+            top:1px;
+            color:rgba(0,0,0,0.5);
+            font-size:14px;
+            line-height:20px;
+          }
+
+          &:last-child {
+              margin-right: 0;
+              &:before {
+                display:none;
+              }
+          }
+          &:hover{
+              background-color: transparent;
+              color: var(--color-link-hover);
+          }
+          &.state-active{
+              background-color: transparent;
+              color: var(--color-main);
+              text-decoration: none;
+          }
+        }
+    }
+    &__item_nobg{
+        padding: 0;
+        height: auto;
+        line-height: auto;
+        margin-right: 20px;
+        color: color(#000 a(0.5));
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover{
+            background-color: transparent;
+            color: var(--color-link-hover);
+        }
+        &.state-active{
+            background-color: transparent;
+            color: var(--color-main);
+            text-decoration: none;
+        }
+    }
+    &__item-icon{
+        margin-right: 0.6em;
+        font-size: 0.9em;
+    }
+
+}

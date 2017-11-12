@@ -1,0 +1,58 @@
+@import 'mixin.css';
+
+@lost gutter 20px;
+@lost flexbox flex;
+
+.container{
+    width: 100%;
+    max-width: 1020px;
+    padding: 0 40px;
+    margin: 0 auto;
+    position: relative;
+}
+.container_no-padding {
+  padding: 0;
+}
+
+@mixin below mobile{
+    .container{
+        padding: 0 20px;
+        &_full-mobile{
+            padding: 0;
+        }
+    }
+    .container_no-padding {
+      padding: 0;
+    }
+}
+.row{
+    /*lost-utility: clearfix;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+ .col{
+    @for $num from 1 to 24{
+        &_$(num){
+            lost-column: $(num)/24;
+        }
+    }
+}
+
+@mixin below tablet{
+    .col{
+        @for $num from 1 to 24{
+            &_$(num)-tablet{
+                lost-column: $(num)/24;
+            }
+        }
+    }
+}
+@mixin below mobile{
+    .col{
+        @for $num from 1 to 24{
+            &_$(num)-mobile{
+                lost-column: $(num)/24;
+            }
+        }
+    }
+}

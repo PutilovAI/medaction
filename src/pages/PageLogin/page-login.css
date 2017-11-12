@@ -1,0 +1,228 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.page-login{
+    &__section{
+        background: url(../../static/page-login-backfone.jpg) no-repeat center;
+        background-size: cover;
+        padding: 0;
+    }
+    &__content{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 120px 0;
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+    }
+    &__col{
+        width: 45%;
+        &_desc{
+            margin-right: 10%;
+            color: #fff;
+            line-height: var(--base-lh);
+        }
+
+        &_form_main {
+          @mixin pos-center-h;
+          right: 55px;
+          width:370px;
+
+          & input {
+            box-shadow: 0 0 0px 1000px #fff inset;
+            background: #fff;
+          }
+
+          &_email {
+            top:113px;
+          }
+
+          & .page-login__form-wrap {
+            padding: 28px;
+          }
+        }
+    }
+    &__title{
+        font-size: 45px;
+        line-height: 57px;
+        text-transform: uppercase;
+        margin-bottom: 0.2em;
+    }
+    &__title-second{
+        @mixin fontH3;
+        margin-bottom: 0.7em;
+    }
+    &__list-title{
+        margin-bottom: 10px;
+    }
+    &__list-item{
+        position: relative;
+        padding-left: 18px;
+        margin-bottom: 10px;
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 6px;
+            border-style: solid;
+            border-width: 5px 0 5px 8px;
+            border-color: transparent transparent transparent var(--color-main);
+        }
+    }
+    &__form-wrap{
+        background-color: #fff;
+        padding: 40px;
+    }
+    &__form-title{
+        display: flex;
+        margin-bottom: 25px;
+    }
+    &__form-title-icon{
+        font-size: 22px;
+        margin-right: 15px;
+    }
+    &__form-title-text{
+        font-size: var(--fs-h3);
+        text-transform: uppercase;
+    }
+
+    &__logo{
+        position: absolute;
+        top: 60px;
+        left: 40px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    &__logo-icon{
+        margin-right: 15px;
+    }
+}
+
+@mixin below tablet{
+    .page-login{
+        &__col{
+            width: 50%;
+            &_desc{
+                margin-right: 6%;
+                width: 44%;
+            }
+
+            &_form_main {
+              position:relative;
+              width:100%;
+              right:auto;
+              top:auto;
+              transform: none;
+
+              & input {
+                box-shadow: 0 0 0px 1000px var(--color-main-ultra-light) inset;
+                background: var(--color-main-ultra-light);
+              }
+
+              & .page-login__form-wrap {
+                padding: 40px;
+              }
+            }
+        }
+        &__title{
+            font-size: 35px;
+            line-height: 1.2px;
+            margin-bottom: 1.3em;
+        }
+        &__title-second{
+            @mixin fontH4;
+            margin-bottom: 0.7em;
+        }
+        &__list-title{
+            margin-bottom: 10px;
+        }
+
+        &__form-wrap {
+          background-color: var(--color-main-ultra-light);
+          margin-left:-40px;
+          margin-right:-40px;
+          padding-left:40px;
+          padding-right:40px;
+        }
+
+    }
+}
+@mixin below mobile{
+    .page-login{
+        &__content{
+            display: block;
+            min-height: auto;
+            padding: 0;
+        }
+        &__row{
+            display: block;
+        }
+        &__col{
+            width: 100%;
+            &_desc{
+                margin-right: 0;
+                width: calc(100% + 60px);
+                background: url(../../static/page-login-backfone.jpg) no-repeat center;
+                background-size: cover;
+                margin: 0 -30px;
+                padding: 85px 30px 40px;
+                overflow: hidden;
+            }
+
+            &_form_main {
+              & .login__button-enter {
+                display:inline-block;
+                width:110px;
+              }
+
+              & .login__form-row_buttons {
+                text-align: left;
+                position:relative;
+                vertical-align: middle;
+              }
+
+              & .login__form-link_reg {
+                position:absolute;
+                right:0;
+                top:13px;
+              }
+
+              & .login__content-row {
+                padding-bottom: 15px;
+              }
+            }
+        }
+        &__title{
+            font-size: 25px;
+            line-height: 1.2;
+            margin-bottom: 0.8em;
+        }
+        &__title-second{
+            @mixin fontH4;
+            margin-bottom: 0.7em;
+        }
+        &__list-title{
+            margin-bottom: 10px;
+        }
+        &__form-wrap{
+            padding: 30px 20px !important;
+            margin: 0 -20px;
+        }
+        &__logo{
+            left: 20px;
+            top: 20px;
+        }
+        &__logo-icon{
+            &:before{
+                width: 30px;
+                height: 30px;
+                background-size: 100% auto;
+            }
+        }
+
+    }
+}

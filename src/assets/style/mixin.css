@@ -1,0 +1,105 @@
+@import './variables.css';
+
+@define-mixin fontFace $font{
+    @font-face {
+        font-family: $font;
+        src: url('../fonts/$(font)/$(font).woff2') format('woff2'),
+            url('../fonts/$(font)/$(font).woff') format('woff'),
+             url('../fonts/$(font)/$(font).ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+
+
+@define-mixin below $device {
+    @media (width < $($device)){
+        @mixin-content;
+    }
+}
+
+@define-mixin between $deviceFrom, $deviceTo {
+    @media ($($deviceFrom) <= width < $($deviceTo)){
+        @mixin-content;
+    }
+}
+
+@define-mixin base-transition $prop: all, $time: 0.3s, $easing: ease{
+    transition: $prop $time $easing;
+}
+
+@define-mixin link{
+    text-decoration: underline;
+    cursor: pointer;
+    @mixin base-transition;
+    &:hover{
+        color: var(--color-link-hover);
+    }
+}
+
+@define-mixin img-size $path{
+    width: image-width($path);
+    height: image-height($path);
+}
+
+@define-mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@define-mixin pos-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@define-mixin pos-center-h {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@define-mixin pos-center-w {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@define-mixin fontH1{
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    @mixin below mobile{
+        font-size: var(--fs-h3);
+        line-height: var(--lh-h3);
+    }
+}
+@define-mixin fontH3{
+    font-size: var(--fs-h3);
+    line-height: var(--lh-h3);
+}
+@define-mixin fontH4{
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h4);
+}
+@define-mixin fontH5{
+    font-size: var(--fs-h5);
+    line-height: var(--lh-h5);;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--color-main);
+}
+
+@define-mixin icon $name{
+    content: $(name);
+    display: inline-block;
+    font-family: var(--icon-ff);
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

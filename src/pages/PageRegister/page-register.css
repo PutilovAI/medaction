@@ -1,0 +1,79 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.page-register{
+    &__page-title{
+        margin-bottom: 1em;
+    }
+    &__section{
+        &:first-child{
+            padding-bottom: 30px;
+        }
+    }
+    &__fieldset{
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &_border{
+            border-top: 1px dotted var(--color-border);
+            padding-top: 40px;
+        }
+    }
+    &__fieldset-title{
+        @mixin fontH4;
+        margin-bottom: 20px;
+    }
+    &__authors-button{
+        margin-top: 10px;
+
+    }
+
+    &__submit{
+        margin-right: 20px;
+        & .button{
+            height: 50px;
+            line-height: 48px;
+            padding: 0 3em;
+        }
+    }
+    &__submit-wrap{
+    }
+    &__submit-wrap-text{
+        line-height: var(--base-lh);
+    }
+    &__submit-wrap-link{
+        color: var(--base-fc);
+        text-decoration: underline;
+    }
+}
+
+@mixin below mobile{
+    .page-register{
+        &__section{
+            &:first-child{
+                padding-bottom: 20px;
+            }
+        }
+        &__submit-wrap{
+            display: block;
+        }
+        &__submit{
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+        & .button{
+            width: 100%;
+        }
+        &__fieldset{
+            margin-bottom: 10px;
+            &_border{
+                border-top: 1px dotted var(--color-border);
+                padding-top: 20px;
+            }
+        }
+        &__fieldset-title{
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@import './variables.css';
+@import './mixin.css';
+@import 'reset.css';
+@import './fonts.css';
+@import './grid.css';
+@import './blocks/wrapper.css';
+@import './blocks/section.css';
+
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: var(--base-ff);
+    font-size: var(--base-fs);
+    color: var(--base-fc);
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+}
+
+b, strong{
+    font-family: var(--base-ff-bold);
+}
+input, button, textarea{
+    appearance: none;
+    border-radius: 0;
+    &:focus{
+        outline: none;
+    }
+}
+h1{
+    @mixin fontH1;
+}
+h2{
+    font-size: var(--fs-h2);
+    line-height:  var(--lh-h2);
+    font-weight: 700;
+    color: var(--color-main);
+    opacity: 0.8;
+    margin-bottom: 0.5em;
+}
+h3{
+    font-size: var(--fs-h3);
+    line-height: var(--lh-h3);
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+h4{
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h4);
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+h5{
+    font-size: var(--fs-h5);
+    line-height: var(--lh-h5);
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--color-main);
+}
+
+a,.link{
+    color: var(--color-link);
+    text-decoration: none;
+    @mixin base-transition color;
+    &:hover{
+        color: var(--color-link-hover);
+        text-decoration: underline;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+p{
+    margin-bottom: 20px;
+}
+
+img {
+  vertical-align: top;
+}
+
+.loading-bar {
+  background-color: var(--color-main);
+  height: 3px;
+  width:100%;
+  position: absolute;
+}

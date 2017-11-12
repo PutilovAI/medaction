@@ -1,0 +1,102 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.interview{
+    font-family: var(--base-ff);
+    padding: 35px 30px;
+    border-top: 5px solid #000;
+    box-shadow: 0 2px 40px 0 color(#000 a(0.25));
+    &__title{
+        @mixin fontH5;
+        margin-bottom: 12px;
+    }
+    &__question{
+        @mixin fontH4;
+        padding-bottom: 20px;
+        border-bottom: 1px dotted color(var(--color-grey) a(0.5));
+    }
+    &__answers{
+        padding-top: 30px;
+    }
+    &__answer{
+        margin-bottom: 20px;
+        padding-left:30px;
+        font-size: var(--fs-h5);
+        line-height: var(--lh-h5);
+        position: relative;
+        cursor: pointer;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 1px solid var(--color-main);
+            border-radius: 50%;
+            left: 0;
+            top: 1px;
+            @mixin base-transition;
+        }
+        &:hover{
+            &:after{
+                border-width: 5px;
+            }
+        }
+    }
+    &__answer-row{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        z-index: 1;
+        position: relative;
+    }
+    &__answer-percent{
+        font-size: 20px;
+        line-height: 25px;
+        color: var(--color-main);
+        padding-left: 20px;
+        display: none;
+    }
+    &__answer-progress-line{
+        display: none;
+        position: absolute;
+        top: -3px;
+        height: 30px;
+        background-color: #E9EEEF;
+        z-index: 0;
+    }
+
+    &.state-checked{
+        .interview__answer-percent,
+        .interview__answer-progress-line{
+            display: block;
+            margin-left:-30px;
+        }
+        .interview__answer{
+            cursor: default;
+            &:after{
+                display: none;
+            }
+            &.state-checked_my{
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: 6px;
+                    top: 8px;
+                    background: url('./img/interview-answer-checked.svg') no-repeat center;
+                    width: 13px;
+                    height: 9px;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+@mixin below mobile{
+    .interview{
+        margin: 0 -20px;
+    }
+}

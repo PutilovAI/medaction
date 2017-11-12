@@ -1,0 +1,126 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.authors{
+    &__title{
+        margin-bottom: 0.8em;
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        width: 100%;
+        margin: 15px 0;
+        &_col-2{
+            width: calc(93/2)%;
+            margin-right: 7%;
+            &:nth-child(2n){
+                margin-right: 0;
+            }
+        }
+        &_col-3{
+            width: calc(86/3)%;
+            margin-right: 7%;
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+        }
+    }
+    &__item-row{
+        display: flex;
+        align-items: center;
+        color: #000;
+        &:hover {
+          text-decoration:none;
+          & .authors__item-name {
+              text-decoration: none;
+              color: color(var(--color-main));
+          }
+        }
+    }
+    &__item-img-wrap{
+        overflow: hidden;
+        width: 45px;
+        min-width: 45px;
+        height: 45px;
+        border-radius: 11px;
+        line-height: 45px;
+        text-align: center;
+        background-color: #FFB667;
+        background-size: contain;
+        color: #fff;
+        font-size: var(--fs-h4);
+        margin-right: 10px;
+        text-decoration: none;
+        &:hover{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__item-img{
+        width: 100%;
+        display: block;
+
+    }
+    &__item-name{
+        @mixin base-transition;
+        text-decoration: none;
+        font-size: var(--fs-h5);
+        line-height: 1.2;
+        border-bottom: 1px solid;
+    }
+    &__item-role{
+        opacity: 0.8;
+        padding-left: 55px;
+        line-height: 1.5;
+    }
+
+    &_bg-dark{
+        color: #fff;
+        & .authors__item-row{
+            color: #fff;
+        }
+    }
+}
+
+@mixin below tablet{
+    .authors{
+        &__item{
+            &_col-3{
+                width: calc(93/2)%;
+                margin-right: 7%;
+                &:nth-child(3n){
+                    margin-right: 7%;
+                }
+                &:nth-child(2n){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+@mixin below mobile{
+    .authors{
+        &__title{
+            margin-bottom: 0.5em;
+        }
+        &__item{
+            &_col-3,
+            &_col-2{
+                width: 100%;
+                margin-right: 0;
+                &:nth-child(3n){
+                    margin-right: 0;
+                }
+                &:nth-child(2n){
+                    margin-right: 0;
+                }
+            }
+        }
+        &__item-role{
+            padding-left: 0;
+            margin-top: 8px;
+        }
+    }
+}

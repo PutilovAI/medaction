@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="36px" viewBox="0 0 33 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Leader</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Иконки" transform="translate(-428.000000, -1380.000000)">
+            <g id="Leader" transform="translate(428.000000, 1380.000000)">
+                <polygon id="Mask" fill="#FFA100" transform="translate(23.784432, 25.680702) rotate(-390.000000) translate(-23.784432, -25.680702) " points="17.5526689 18.1070822 29.1358532 18.1070822 30.0161947 33.0836383 24.0303084 29.6276852 17.8686305 33.254321"></polygon>
+                <polygon id="Mask" fill="#FFA100" transform="translate(9.192130, 25.731189) scale(-1, 1) rotate(-390.000000) translate(-9.192130, -25.731189) " points="3.06134155 18.1575694 14.6445258 18.1575694 15.3229184 33.1469159 9.19067449 29.6064633 3.37730312 33.3048083"></polygon>
+                <circle id="Oval-3" fill="#FFD140" cx="16.3754003" cy="13.5" r="13.5"></circle>
+                <polygon id="Star" fill="#FFFFFF" points="16.5 17.25 12.0916106 19.5676275 12.9335381 14.6588137 9.36707613 11.1823725 14.2958053 10.4661863 16.5 6 18.7041947 10.4661863 23.6329239 11.1823725 20.0664619 14.6588137 20.9083894 19.5676275"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

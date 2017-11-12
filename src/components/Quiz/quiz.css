@@ -1,0 +1,35 @@
+@import '../../assets/style/variables.css';
+@import '../../assets/style/mixin.css';
+
+.quiz{
+    margin-bottom: 40px;
+    &__title{
+        @mixin fontH4;
+        margin-bottom: 0.8em;
+    }
+    &__case{
+        padding-left: 30px;
+        margin-bottom: 20px;
+        position: relative;
+        line-height: var(--base-lh);
+        &.state-success{
+            color: var(--color-main);
+        }
+        &.state-failure{
+            color: var(--color-red);
+        }
+    }
+    &__case-status{
+        font-size: 20px;
+        position: absolute;
+        left: 0;
+        top: -3px;
+    }
+}
+@mixin below mobile{
+    .quiz{
+        &__title{
+            font-size: var(--fs-h5);
+        }
+    }
+}

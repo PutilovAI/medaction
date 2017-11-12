@@ -1,0 +1,132 @@
+:root {
+    --base-fs: 14px;
+    --base-lh: 1.5;
+    --base-fc: #333333;
+    --base-br: 4px;
+    --base-ff: MuseoSansCyrl, Arial, sans-serif;
+    --base-ff-bold: MuseoSansCyrl, Arial, sans-serif;
+    --second-ff: LoraRegular, Arial, sans-serif;
+    --second-ff-italic: LoraItalic, Arial, sans-serif;
+    --second-ff-bold: LoraBold, Arial, sans-serif;
+    --second-ff-bold-italic: LoraBoldItalic, Arial, sans-serif;
+
+    --icon-ff: icomoon;
+
+    --fs-h1: 45px;
+    --fs-h2: 35px;
+    --fs-h3: 25px;
+    --fs-h4: 18px;
+    --fs-h5: 16px;
+
+    --lh-h1: 1.14;
+    --lh-h2: 1.28;
+    --lh-h3: 1.4;
+    --lh-h4: 1.55;
+    --lh-h5: 1.5;
+
+    --color-main: var(--color_main);
+    --color-main-light: var(--color_main_light);
+    --color-main-ultra-light: var(--color_main_ultra_light);
+    --color-red: var(--color_red);
+    --color-grey: var(--color_grey);
+    --color-second: var(--color_second);
+    --color-link: var(--color_link);
+    --color-link-hover: var(--color_link_hover);
+    --color-border: color(var(--color-grey) a(0.3));
+    --button-bg: var(--color-main);
+    --button-bg-hover: var(--button_bg_hover);
+    --button-bg-active: var(--button_bg_active);
+    --button-bg-disabled: var(--button_bg_disabled);
+    --button-border-radius: var(--base-br);
+    --color-main-background: var(--color_main_background);
+
+    --input-height: 40px;
+    --input-color: #000;
+    --input-bg-color: #fff;
+    --input-color-error: red;
+    --input-border-color: color(var(--color-grey) a(0.5));
+    --input-border-color-hover: color(var(--color-grey) a(0.8));
+    --input-border-color-focus: color(var(--color-grey) a(1));
+
+    --menu-width: 75px;
+    --menu-height-mobile: 50px;
+
+    /*--basedColor: var(--mainColor);*/
+}
+
+
+$mobile: 768px;
+$tablet: 1024px;
+
+$z-index-menu: 1000;
+
+/*Icons variables */
+$icon_acept: "\e900";
+$icon_reg: "\e940";
+$icon_add_file_clip: "\e901";
+$icon_add_files: "\e902";
+$icon_add: "\e903";
+$icon_alarm_clock_fill: "\e904";
+$icon_alarm_clock: "\e905";
+$icon_all: "\e906";
+$icon_arrow_left: "\e907";
+$icon_arrow_right: "\e908";
+$icon_arrow_specify: "\e909";
+$icon_article: "\e90a";
+$icon_brocken_heart_fill: "\e90b";
+$icon_broken_heart: "\e90c";
+$icon_research: "\e942";
+$icon_calendar: "\e90d";
+$icon_cancel: "\e90e";
+$icon_clock: "\e90f";
+$icon_close: "\e910";
+$icon_comments_fill: "\e911";
+$icon_copy_fill: "\e912";
+$icon_delete_fill: "\e913";
+$icon_delete_user: "\e914";
+$icon_dislike_fill: "\e915";
+$icon_eye_close: "\e916";
+$icon_eye_open: "\e917";
+$icon_filter: "\e918";
+$icon_funny: "\e919";
+$icon_happy: "\e91a";
+$icon_heart_fill: "\e91b";
+$icon_heart: "\e91c";
+$icon_ivent: "\e91d";
+$icon_job: "\e91e";
+$icon_key: "\e91f";
+$icon_konsilium: "\e920";
+$icon_lecture: "\e921";
+$icon_like_fill: "\e922";
+$icon_link_external: "\e923";
+$icon_location: "\e924";
+$icon_locked_fill: "\e925";
+$icon_options_fill: "\e926";
+$icon_pencil_fill: "\e927";
+$icon_pencil: "\e928";
+$icon_photo: "\e929";
+$icon_play: "\e92a";
+$icon_question: "\e92b";
+$icon_sad: "\e92c";
+$icon_search: "\e92d";
+$icon_secret_files: "\e92e";
+$icon_send_fill: "\e92f";
+$icon_send: "\e930";
+$icon_settings: "\e931";
+$icon_share: "\e932";
+$icon_soc_fb_fill: "\e933";
+$icon_soc_fb: "\e934";
+$icon_soc_google_fill: "\e935";
+$icon_soc_ok_fill: "\e936";
+$icon_soc_ok: "\e937";
+$icon_soc_tw_fill: "\e938";
+$icon_soc_tw: "\e939";
+$icon_soc_vk_fill: "\e93a";
+$icon_soc_vk: "\e93b";
+$icon_user_fill: "\e93c";
+$icon_videoteka: "\e93d";
+$icon_webinar: "\e93e";
+$icon_write: "\e93f";
+$icon_broken_heart: "\e941";
+$icon_star: "\e944";
+$icon_star_line: "\e943";

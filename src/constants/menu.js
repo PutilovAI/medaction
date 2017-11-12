@@ -1,0 +1,2 @@
+export const MENU_UPDATE_STATES = 'MENU_UPDATE_STATES';
+

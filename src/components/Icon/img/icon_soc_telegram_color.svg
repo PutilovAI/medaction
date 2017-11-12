@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>telegram</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="50" height="50" rx="12"></rect>
+        <linearGradient x1="61.3438559%" y1="47.150188%" x2="80.4983437%" y2="83.7095963%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Иконки" transform="translate(-478.000000, -1715.000000)">
+            <g id="telegram" transform="translate(478.000000, 1715.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#2FAEEB" xlink:href="#path-1"></use>
+                <path d="M20.6060606,35.5363636 C19.7787879,35.5363636 19.9272727,35.2227273 19.630303,34.4490909 L17.2121212,26.5872727 L18.4751433,25.7544746 L21.6738316,34.4490909 L20.6060606,35.5363636 Z" id="path2993" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M20.6060606,35.5363636 C21.2424242,35.5363636 21.5181818,35.2436364 21.8787879,34.9090909 C22.430303,34.3863636 29.5151515,27.5909091 29.5151515,27.5909091 L25.1666667,26.5454545 L21.1363636,29.0545455 L20.6060606,35.3272727 L20.6060606,35.5363636 Z" id="path2989" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M21.030303,29.1381818 L31.2969697,36.6027273 C32.4636364,37.23 33.3121212,36.9163636 33.6090909,35.5363636 L37.7878788,16.1327273 C38.2121212,14.4390909 37.130303,13.6863636 36.0060606,14.1881818 L11.4848485,23.5136364 C9.80909091,24.1827273 9.83030303,25.1027273 11.1878788,25.5 L17.4878788,27.4445455 L32.0606061,18.3909091 C32.7393939,17.9727273 33.3757576,18.2027273 32.8666667,18.6627273 L21.030303,29.1381818 Z" id="path2991" fill="url(#linearGradient-3)" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

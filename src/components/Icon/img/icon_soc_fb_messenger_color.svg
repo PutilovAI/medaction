@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>fb_messeger</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="50" height="50" rx="12"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Иконки" transform="translate(-618.000000, -1715.000000)">
+            <g id="fb_messeger" transform="translate(618.000000, 1715.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#0084FF" xlink:href="#path-1"></use>
+                <path d="M25,11 C17.268,11 11,16.8036914 11,23.962963 C11,28.0424074 13.0358261,31.6811975 16.2173913,34.0573951 L16.2173913,39 L20.9842609,36.3838148 C22.2564348,36.7358889 23.6041739,36.9259259 25,36.9259259 C32.732,36.9259259 39,31.1222346 39,23.962963 C39,16.8036914 32.732,11 25,11 Z M26.3913043,28.4567901 L22.826087,24.654321 L15.8695652,28.4567901 L23.5217391,20.3333333 L27.173913,24.1358025 L34.0434783,20.3333333 L26.3913043,28.4567901 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
